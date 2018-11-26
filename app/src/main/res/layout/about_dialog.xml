@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#38ffffff">
+
+    <TextView
+        android:id="@+id/order_placed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/c_real_global_enterprise_is_a_world_class_brand_well_known_for_the_supply_and_installation_of_state_of_the_art_musical_equipments_the_company_has_built_its_reputation_from_the_delivery_of_qualitative_products_and_services_that_is_significant_in_durability_the_company_offers_in_addition_after_sales_services_of_training_and_equipment_maintenance_and_a_long_period_of_warranty_for_every_product_sold"
+        android:padding="10dp"
+        android:fontFamily="casual"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/yes_button_about"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/order_placed"
+        android:layout_alignParentEnd="true"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:text="OK"
+        android:textColor="@color/colorAccent"
+        />
+
+
+</RelativeLayout>

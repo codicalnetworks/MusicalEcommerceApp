@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">C-Real global</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="c_real_global_enterprise_is_a_world_class_brand_well_known_for_the_supply_and_installation_of_state_of_the_art_musical_equipments_the_company_has_built_its_reputation_from_the_delivery_of_qualitative_products_and_services_that_is_significant_in_durability_the_company_offers_in_addition_after_sales_services_of_training_and_equipment_maintenance_and_a_long_period_of_warranty_for_every_product_sold">C-REAL GLOBAL ENTERPRISE is a world class brand well known for the supply and installation of state of the art musical equipments. The company has built its reputation from the Delivery of qualitative Products and Services that is significant in durability. The company offers in addition after sales Services of training and Equipment maintenance and a long period of warranty for every Product sold.</string>
+
+    <string-array name="categories_array">
+        <item>All</item>
+        <item>Microphones</item>
+        <item>Drums</item>
+        <item>Guitars</item>
+        <item>Mixers</item>
+        <item>Monitors</item>
+        <item>PaSystem</item>
+        <item>Pianos</item>
+        <item>Speakers</item>
+        <item>Woofers</item>
+
+    </string-array>
+</resources>

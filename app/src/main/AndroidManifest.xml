@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.codicalnetworks.e_commerceui">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="CReal global"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DescriptionActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".ShippingActivity"
+            android:parentActivityName=".CartActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CartActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".LoginActivity"
+            android:parentActivityName=".HomeActivity"/>
+        <activity android:name=".RegisterActivity"
+            android:parentActivityName=".LoginActivity"/>
+        <activity android:name=".OrderActivity" />
+        <activity android:name=".AddressActivity" />
+        <activity
+            android:name=".ProfileActivity"
+            android:parentActivityName=".HomeActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".CheckOutActivity" />
+        <activity
+            android:name=".PostActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".UsersActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ContactUsActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".MessagesActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ChangeImagesActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FavoritesActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".SearchActivity"
+            android:parentActivityName=".HomeActivity">
+
+        </activity>
+    </application>
+
+</manifest>

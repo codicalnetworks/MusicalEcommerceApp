@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codicalnetworks.e_commerceui.ProfileActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/profile_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/profile_toolbar"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/image"/>
+
+
+            <EditText
+                android:id="@+id/profile_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:background="@drawable/round_background"
+                android:padding="10dp"
+                android:drawableStart="@drawable/ic_name"
+                android:drawablePadding="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <EditText
+                android:id="@+id/profile_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:background="@drawable/round_background"
+                android:padding="10dp"
+                android:drawableStart="@drawable/ic_address_profile"
+                android:drawablePadding="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/profile_sex"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_background"
+                    android:padding="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:drawableStart="@drawable/ic_sex"
+                    android:drawablePadding="10dp"
+                    android:hint="Sex"/>
+
+                <EditText
+                    android:id="@+id/profile_telephone"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Telephone"
+                    android:background="@drawable/round_background"
+                    android:padding="10dp"
+                    android:drawableStart="@drawable/ic_phone_profile"
+                    android:drawablePadding="10dp"
+                    android:layout_marginBottom="10dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/profile_date_of_birth"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Date of birth"
+                    android:drawableStart="@drawable/ic_date"
+                    android:drawablePadding="10dp"
+                    android:background="@drawable/round_background"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"/>
+
+                <EditText
+                    android:id="@+id/profile_country"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Country"
+                    android:drawableStart="@drawable/ic_country"
+                    android:drawablePadding="10dp"
+                    android:background="@drawable/round_background"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"/>
+
+            </LinearLayout>
+
+
+
+
+            <EditText
+                android:id="@+id/profile_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:background="@drawable/round_background"
+                android:padding="10dp"
+                android:drawableStart="@drawable/ic_mail"
+                android:drawablePadding="10dp"
+                android:inputType="textWebEmailAddress"
+                android:layout_marginBottom="10dp"/>
+
+
+            <EditText
+                android:id="@+id/profile_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="City"
+                android:background="@drawable/round_background"
+                android:drawableStart="@drawable/ic_city"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+    <Button
+        android:id="@+id/btn_save_changes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:text="SAVE CHANGES"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>

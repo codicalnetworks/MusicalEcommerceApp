@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codicalnetworks.e_commerceui.ShippingActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/shipping_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/shipping_toolbar"
+        android:layout_above="@id/btn_next">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <EditText
+                android:id="@+id/first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_background"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:inputType="text"
+                android:hint="First name"
+                android:drawableStart="@drawable/ic_name"
+                android:drawablePadding="10dp"
+                android:paddingEnd="10dp"
+                />
+
+
+
+            <EditText
+                android:id="@+id/last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_background"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:hint="Last name"
+                android:drawableStart="@drawable/ic_name"
+                android:drawablePadding="10dp"
+                android:inputType="text"
+                android:paddingEnd="10dp"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_background"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:hint="Email Address"
+                android:inputType="text"
+                android:drawableStart="@drawable/ic_mail"
+                android:drawablePadding="10dp"
+                android:paddingEnd="10dp"/>
+
+
+            <EditText
+                android:id="@+id/telephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_background"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:hint="Telephone"
+                android:paddingBottom="5dp"
+                android:drawableStart="@drawable/ic_phone_profile"
+                android:drawablePadding="10dp"
+                android:inputType="phone"
+                android:paddingEnd="10dp"/>
+
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_background"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingEnd="10dp"
+                android:drawableStart="@drawable/ic_address_profile"
+                android:drawablePadding="10dp"
+                android:hint="Address"
+                android:inputType="text"/>
+
+
+            <EditText
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_background"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:hint="Country"
+                android:drawableStart="@drawable/ic_country"
+                android:drawablePadding="10dp"
+                android:paddingBottom="5dp"
+                android:paddingEnd="10dp"                />
+
+
+
+            <EditText
+                android:id="@+id/zone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_background"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:hint="Zone"
+                android:drawableStart="@drawable/ic_zone"
+                android:drawablePadding="10dp"
+                android:paddingEnd="10dp"
+                android:inputType="text"/>
+
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_background"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingEnd="10dp"
+                android:inputType="text"
+                android:hint="City"
+                android:drawableStart="@drawable/ic_city"
+                android:drawablePadding="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+
+            <EditText
+                android:id="@+id/post_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_background"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:inputType="number"
+                android:hint="Post code"
+                android:drawableStart="@drawable/ic_code"
+                android:drawablePadding="10dp"
+                android:paddingEnd="10dp" />
+
+            <CheckBox
+                android:id="@+id/default_shipping_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Default shipping details"
+                android:onClick="onCheckBoxClicked"
+                android:layout_margin="10dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="NEXT"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/white"/>
+
+
+</RelativeLayout>
